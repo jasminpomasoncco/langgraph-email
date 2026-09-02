@@ -6,6 +6,7 @@ import os
 import base64
 import datetime
 from ..state import Email
+from .html_utils import html_to_text
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
 
@@ -25,6 +26,45 @@ def get_gmail_service():
             token.write(creds.to_json())
     return build('gmail', 'v1', credentials=creds)
 
+def _decode_body(data: str) -> str:
+    if not data:
+        return ''
+    try:
+        return base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
+    except Exception:
+        return ''
+
+
+def _iter_parts(payload):
+    """Yield every part of the MIME tree, including nested multiparts."""
+    yield payload
+    for part in payload.get('parts', []) or []:
+        yield from _iter_parts(part)
+
+
+def extract_body(payload) -> str:
+    """Return the email body as plain text, preferring text/plain over text/html."""
+    plain, html = '', ''
+    for part in _iter_parts(payload):
+        mime = part.get('mimeType', '')
+        # Skip attachments; they carry attachmentId instead of inline data.
+        if part.get('body', {}).get('attachmentId'):
+            continue
+        data = part.get('body', {}).get('data', '')
+        if not data:
+            continue
+        if mime == 'text/plain' and not plain:
+            plain = _decode_body(data)
+        elif mime == 'text/html' and not html:
+            html = _decode_body(data)
+
+    if plain.strip():
+        return plain.strip()
+    if html.strip():
+        return html_to_text(html)
+    return ''
+
+
 def parse_email_message(message) -> Email:
     headers_list = message.get('payload', {}).get('headers', [])
     headers = {header['name'].lower(): header['value'] for header in headers_list}
@@ -35,21 +75,7 @@ def parse_email_message(message) -> Email:
     message_id = headers.get('message-id', '')
     references = headers.get('references', '')
 
-    body = ''
-    payload = message.get('payload', {})
-    if 'parts' in payload:
-        for part in payload['parts']:
-            if part.get('mimeType') == 'text/plain':
-                body = part.get('body', {}).get('data', '')
-                break
-    else:
-        body = payload.get('body', {}).get('data', '')
-
-    if body:
-        try:
-            body = base64.urlsafe_b64decode(body).decode('utf-8')
-        except Exception:
-            body = ''
+    body = extract_body(message.get('payload', {}))
 
     return Email(
         id=message.get('id', ''),
@@ -61,7 +87,7 @@ def parse_email_message(message) -> Email:
         references=references,
         thread_id=message.get('threadId', ''),
     )
-    
+
 def get_most_recent_email(user_id='me') -> Email | None:
     service = get_gmail_service()
     today = datetime.datetime.now().date()

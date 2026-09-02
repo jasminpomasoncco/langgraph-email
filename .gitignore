@@ -12,3 +12,4 @@ token.json
 # Virtual environments
 .venv
 venv/
+.env
