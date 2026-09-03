@@ -1,0 +1,24 @@
+.git
+.gitignore
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.ruff_cache
+.mypy_cache
+
+# Secrets / local runtime - provide these on Cloud Run via Secret Manager / env
+.env
+credentials.json
+token.json
+
+# Generated at runtime, rebuilt from data/*.txt
+chroma_db
+
+# Docs / editor
+*.md
+!README.md
+.vscode
+.idea

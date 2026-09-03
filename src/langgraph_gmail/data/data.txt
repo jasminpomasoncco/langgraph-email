@@ -1,0 +1,160 @@
+CATÁLOGO DE PRODUCTOS - EMPRESA TECH
+
+Moneda: Soles peruanos (S/).
+"Precio promo" es el precio de contado.
+"Cuota mensual x12" es el valor de cada cuota en un plan a 12 meses.
+
+====================================================
+ESTADO: OPEN BOX
+====================================================
+
+Categoría: Apple iPhones
+
+Modelo: iPhone 13 128 GB
+Precio promo (S/): 1676
+Cuota mensual x12 (S/): 176
+
+Modelo: iPhone 13 256 GB
+Precio promo (S/): 1939
+Cuota mensual x12 (S/): 203
+
+Modelo: iPhone 13 Pro 128 GB
+Precio promo (S/): 2051
+Cuota mensual x12 (S/): 218
+
+Modelo: iPhone 13 Pro 256 GB
+Precio promo (S/): 2314
+Cuota mensual x12 (S/): 244
+
+Modelo: iPhone 13 Pro Max 128 GB
+Precio promo (S/): 2426
+Cuota mensual x12 (S/): 255
+
+Modelo: iPhone 13 Pro Max 256 GB
+Precio promo (S/): 2689
+Cuota mensual x12 (S/): 281
+
+Modelo: iPhone 14 128 GB
+Precio promo (S/): 1976
+Cuota mensual x12 (S/): 210
+
+Modelo: iPhone 14 256 GB
+Precio promo (S/): 2239
+Cuota mensual x12 (S/): 233
+
+Modelo: iPhone 14 Pro 128 GB
+Precio promo (S/): 2426
+Cuota mensual x12 (S/): 259
+
+Modelo: iPhone 14 Pro 256 GB
+Precio promo (S/): 2689
+Cuota mensual x12 (S/): 281
+
+Modelo: iPhone 14 Pro Max 128 GB
+Precio promo (S/): 2914
+Cuota mensual x12 (S/): 308
+
+Modelo: iPhone 14 Pro Max 256 GB
+Precio promo (S/): 3176
+Cuota mensual x12 (S/): 330
+
+Modelo: iPhone 15 128 GB
+Precio promo (S/): 2501
+Cuota mensual x12 (S/): 270
+
+Modelo: iPhone 15 256 GB
+Precio promo (S/): 2801
+Cuota mensual x12 (S/): 296
+
+Modelo: iPhone 15 Pro 128 GB
+Precio promo (S/): 3176
+Cuota mensual x12 (S/): 330
+
+Modelo: iPhone 15 Pro 256 GB
+Precio promo (S/): 3439
+Cuota mensual x12 (S/): 360
+
+Modelo: iPhone 15 Pro Max 256 GB
+Precio promo (S/): 3739
+Cuota mensual x12 (S/): 405
+
+====================================================
+ESTADO: SELLADO
+====================================================
+
+Categoría: AirPods
+
+Modelo: AirPods 4
+Precio promo (S/): 739
+Cuota mensual x12 (S/): 68
+
+Modelo: AirPods 4 con Cancelación Activa de Ruido
+Precio promo (S/): 1001
+Cuota mensual x12 (S/): 98
+
+Modelo: AirPods Pro 2
+Precio promo (S/): 1039
+Cuota mensual x12 (S/): 105
+
+Modelo: AirPods Max
+Precio promo (S/): 2539
+Cuota mensual x12 (S/): 233
+
+Categoría: Apple Watch
+
+Modelo: Apple Watch SE 2da gen 40 mm
+Precio promo (S/): 1076
+Cuota mensual x12 (S/): 109
+
+Modelo: Apple Watch SE 2da gen 44 mm
+Precio promo (S/): 1264
+Cuota mensual x12 (S/): 128
+
+Modelo: Apple Watch S10 42 mm
+Precio promo (S/): 1789
+Cuota mensual x12 (S/): 188
+
+Modelo: Apple Watch S10 46 mm
+Precio promo (S/): 2014
+Cuota mensual x12 (S/): 203
+
+Modelo: Apple Watch Ultra 2 (2024)
+Precio promo (S/): 3739
+Cuota mensual x12 (S/): 371
+
+Categoría: MacBook
+
+Modelo: MacBook Air M1 13.3"
+CPU: M1 | RAM: 8 GB | SSD: 256 GB
+Precio promo (S/): 3289
+Cuota mensual x12 (S/): 311
+
+Modelo: MacBook Air M3 13"
+CPU: M3 | RAM: 8 GB | SSD: 256 GB
+Precio promo (S/): 4489
+Cuota mensual x12 (S/): 454
+
+Modelo: MacBook Air M3 13"
+CPU: M3 | RAM: 16 GB | SSD: 256 GB
+Precio promo (S/): 5426
+Cuota mensual x12 (S/): 551
+
+Modelo: MacBook Air M3 15"
+CPU: M3 | RAM: 8 GB | SSD: 256 GB
+Precio promo (S/): 5614
+Cuota mensual x12 (S/): 570
+
+Modelo: MacBook Pro M4 14"
+CPU: 10 núcleos | GPU: 10 núcleos | RAM: 16 GB | SSD: 512 GB
+Precio promo (S/): 7864
+Cuota mensual x12 (S/): 810
+
+Modelo: MacBook Pro M4 14" (configuración superior)
+CPU: 10 núcleos | GPU: 10 núcleos | RAM: 16 GB | SSD: 512 GB
+Precio promo (S/): 8989
+Cuota mensual x12 (S/): 923
+
+Modelo: MacBook Pro M4 Pro 16"
+CPU: 14 núcleos | GPU: 20 núcleos | RAM: 24 GB | SSD: 512 GB
+Precio promo (S/): 11989
+Cuota mensual x12 (S/): 1211
